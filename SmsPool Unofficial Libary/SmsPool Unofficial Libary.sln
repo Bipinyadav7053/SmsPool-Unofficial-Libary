@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPool Unofficial Libary", "SmsPool Unofficial Libary\SmsPool Unofficial Libary.csproj", "{7765342E-3ABF-438B-AA85-C296BCA796DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7765342E-3ABF-438B-AA85-C296BCA796DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7765342E-3ABF-438B-AA85-C296BCA796DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7765342E-3ABF-438B-AA85-C296BCA796DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7765342E-3ABF-438B-AA85-C296BCA796DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EB19DC1-B0B3-4742-B7F5-F4904F83CB7C}
+	EndGlobalSection
+EndGlobal

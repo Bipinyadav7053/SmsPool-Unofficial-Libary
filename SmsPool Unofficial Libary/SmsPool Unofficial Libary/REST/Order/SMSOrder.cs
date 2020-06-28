@@ -23,9 +23,10 @@ namespace SmsPool_Unofficial_Libary
             }
             if (result.OrderID != null)
             {
-                return result.OrderID;
+                client.Order_ID = result.OrderID;
+                return result.Number;
             }
-            return "Success";
+            return "Failed to order number.";
         }
     }
 }

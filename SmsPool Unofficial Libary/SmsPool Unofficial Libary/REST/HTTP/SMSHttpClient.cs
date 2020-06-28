@@ -19,8 +19,6 @@ namespace SmsPool_Unofficial_Libary
         private static JSchema _errorSchema = new JSchemaGenerator().Generate(typeof(SMSHttpError));
 #pragma warning restore IDE0044
 
-        public Dictionary<string, string> Param { get; set; } = new Dictionary<string, string>();
-
         public string Api { get; set; } = "https://smspool.net/api/";
 
         public bool RetryOnRatelimit { get; private set; } = true;

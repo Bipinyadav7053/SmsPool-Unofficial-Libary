@@ -22,5 +22,12 @@ namespace SmsPool_Unofficial_Libary
         {
             get { return _orderid; }
         }
+
+        [JsonProperty("number")]
+        public static string _number { get; set; }
+        public string Number
+        {
+            get { return _number; }
+        }
     }
 }

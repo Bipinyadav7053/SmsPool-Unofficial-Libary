@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using SmsPool_Unofficial_Libary.REST.Cancel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmsPool_Unofficial_Libary.REST.Check
+namespace SmsPool_Unofficial_Libary
 {
     public static class SMSCheck
     {

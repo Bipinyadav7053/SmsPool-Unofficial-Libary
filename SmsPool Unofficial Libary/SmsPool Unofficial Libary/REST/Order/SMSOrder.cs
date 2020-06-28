@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmsPool_Unofficial_Libary.REST.Order
+namespace SmsPool_Unofficial_Libary
 {
     public static class SMSOrder
     {

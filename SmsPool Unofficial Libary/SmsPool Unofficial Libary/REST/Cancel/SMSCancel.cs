@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmsPool_Unofficial_Libary.REST.Cancel
+namespace SmsPool_Unofficial_Libary
 {
     public static class SMSCancel
     {

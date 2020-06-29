@@ -16,7 +16,6 @@ namespace SmsPool_Unofficial_Libary
             string results = await post.Content.ReadAsStringAsync();
             if (results.Contains("Please fill in your API key.")) { return "Please fill in your API key."; }
             SMSCheckExtension result = JsonConvert.DeserializeObject<SMSCheckExtension>(results);
-            Console.WriteLine(result.successcode);
             if (result.successcode == 1)
             {
                 return result.Message;

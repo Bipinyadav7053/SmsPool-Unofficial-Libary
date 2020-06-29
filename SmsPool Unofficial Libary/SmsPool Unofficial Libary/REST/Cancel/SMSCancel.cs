@@ -20,7 +20,7 @@ namespace SmsPool_Unofficial_Libary
             {
                 return result.Message;
             }
-            return "Failed to cancel order.";
+            else { return "Failed to cancel order."; };
         }
     }
 }

@@ -12,8 +12,14 @@ SMSClient client = new SMSClient("API_KEY");
  var number = await client.Order("3", "Snapchat", "RU");
  var order_id = client.Order_ID;
  
-  //check
- await client.Check("ORDER_ID");
+//check
+smswait:
+await client.Check("ORDER_ID");
+while (smscode == "Waiting.")
+{
+	await Task.Delay(1000);
+	goto smswait; //wouldn't recommend using this but it works for newbs
+}
  
  //check example
  SMSClient client = new SMSClient("API_KEY");

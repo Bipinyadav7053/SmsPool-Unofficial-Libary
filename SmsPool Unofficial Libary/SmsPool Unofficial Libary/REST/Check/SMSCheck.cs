@@ -19,15 +19,19 @@ namespace SmsPool_Unofficial_Libary
                 string results = await post.Content.ReadAsStringAsync();
                 if (results.Contains("Please fill in your API key.")) { return "Please fill in your API key."; }
                 SMSCheckExtension result = JsonConvert.DeserializeObject<SMSCheckExtension>(results);
-                if (result.successcode == 1)
+                if (result.successcode == 0)
+                {
+                    await client.Cancel(order_id);
+                }
+                else if (result.successcode == 1)
                 {
                     return result.Message;
                 }
-                if (result.successcode == 2)
+                else if(result.successcode == 2)
                 {
                     return "Waiting.";
                 }
-                if (result.successcode == 3)
+                else if(result.successcode == 3)
                 {
                     await client.Cancel(order_id);
                 }
